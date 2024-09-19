@@ -103,10 +103,10 @@
                             <form method="POST" action="{{ route('logout') }}" x-data>
                                 @csrf
 
-                                <x-dropdown-link href="{{ route('logout') }}"
+                                <button href="{{ route('logout') }}"
                                          @click.prevent="$root.submit();">
                                     {{ __('Log Out') }}
-                                </x-dropdown-link>
+                                </button>
                             </form>
                         </x-slot>
                     </x-dropdown>
